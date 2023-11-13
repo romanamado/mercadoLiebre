@@ -1,0 +1,553 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    background-color: #ebebeb; 
+}
+
+
+/* paleta de colores */
+
+    .amarillo-bg {
+        background-color: #EAC926;
+    }
+    .azul-bg {
+        background-color: #03264C;
+    }
+    .celeste-bg {
+        background-color: #1259c3;
+    }
+
+    .gris-claro-txt {
+        color: #ebebeb;
+    }
+
+    .gris-oscuro-txt {
+        color: #666;;
+    }
+
+    .blanco-bg {
+        background-color: white;
+    }
+
+
+
+    /* Tamaño del texto */
+
+    .cuerpo-txt {
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* tamaño de las imagenes y el margen del buscador*/
+
+    .buscador input{
+        width: 85%;
+        border: none;
+        padding: 1px 10px 1px 5px;
+        border-right: #ebebeb solid 1px;
+    }
+
+
+    .logo  {
+        width: 50%;
+        padding: 5px;
+    }
+
+
+    /* barra navbar */
+    .barra-busqueda{
+        width: 50%;
+        padding: 5px;
+    }
+
+    .buscador {
+        background-color: white;
+        border-radius: 0.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .lupa{
+        display: inline;
+        cursor: pointer;
+        color: #666;
+        padding: 4px;
+        font-size: 70%;
+        border: none;
+        background-color: white;
+    }
+
+
+/* menu de la hamburgesa*/
+
+    div.menu-burger {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .fas {
+        padding: 8px;
+        border-radius: 7px;
+    }
+
+    /* titulos del footer */
+    footer {
+        margin: 8px;
+    }
+    .contenido-titulo-centrado {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+
+    .contenido-text-centrado {
+        text-align: center;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+/* iconos */
+
+    .iconos{
+        padding-top: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .iconos-celeste {
+        color: #1259c3;
+    }
+
+    /* main navbar */
+    
+    .main-navbar{
+        display: none;
+    }
+    
+    .Descripcion-txt{
+        display: none;
+    }
+    
+        /* la home  */
+    .home-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+    
+
+        /* login */
+
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+
+        form{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+        }
+     
+    form.formulario{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding-top: 10px;
+       
+}
+
+      form input{
+        margin-top: 5%;
+        margin-bottom: 13px;
+        padding: 2px;
+        border: solid white;
+        border-radius: 8px;
+        font-size: 100%;
+      }
+
+
+
+      /* botones */
+
+      button a {
+        text-decoration: none;
+        color: white;
+      }      
+      .boton{
+        margin-top: 20px;
+        background-color: #12c33e;
+        border: #12c33e solid;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 100%;
+
+      }
+
+
+
+
+      /* pseudo clase */
+   
+
+
+       input:invalid{
+            border: 3px red solid;
+            outline: 0;
+
+      }
+      
+      .spanear{
+            color:red;
+            margin: 5px;
+       
+      }
+
+
+      
+
+      form button:hover{
+            background-color: #0022AA;
+            border: #0022AA solid;
+
+       
+      }
+
+
+
+
+    
+
+
+   
+
+@media (min-width: 575px){
+    /* tablets */
+    /* Home flex */
+    .home-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* seccion de productos */
+
+    .section-productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .section-productos-top,
+    .section-productos-boton{
+            margin-bottom: 10px;
+            width: 45%;
+    }
+
+    /* imagenes  */
+    div.logo{
+        width: 20%;
+   }
+
+   div.barra-busqueda{
+        width: 38%;
+        font-size: 1.7rem;
+   }
+
+   input:focus{
+    outline: solid #ebebeb;
+}
+   
+    img.banner{
+       width: 100vw;
+    }
+
+
+    /* navbar */
+
+     .cuerpo-txt{
+        width: 30%;
+        font-size: 80%;
+     }
+     nav.main-navbar {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        font-size: 0.8rem;
+        }
+
+     .main-navbar ul{
+            display: flex;
+            padding-bottom: 10px;
+            list-style: none;
+            justify-content: space-between;
+            
+        }
+
+        .main-navbar a{
+        text-decoration: none;
+        font-weight: 400;
+        color: black;
+        padding-left: 10px;
+    } 
+
+    .main-navbar a:hover{
+        color: #1259c3;
+    }
+    
+        .main-navbar a i{
+            display: flex;
+            align-items: center;
+        }
+    
+    .menu-burger{
+        display: none;
+    }
+
+    /* textos */
+    .precio-descuento{
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px;
+   }
+   .precio-txt{
+    padding-right: 10px;
+   }
+   /* desaparecer */
+   .envio-border{
+    display: none;
+    border: none;
+    padding: 0;
+    }
+
+    /* aparecer la descripcion */
+   .Descripcion-txt{
+    display: block;
+   }
+   /* sombreado de cuadro */
+    .footer-box-shadow,
+    .figuras-box-shadow{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+
+   /* logo de envio */
+   .product-desc-box > .product-delivery-icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }    
+   .product-desc-box {
+    position: relative;
+   }
+}
+
+/* --------------------------------------------------------- */
+        /* login */
+
+        form{
+            margin: 10px;
+            padding: 10px;
+        }
+     
+    form.formulario{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding-top: 10px;
+        padding-bottom: 30px;
+}
+
+      form input{
+        margin-top: 5%;
+        margin-bottom: 13px;
+        padding: 9px;
+        border: solid white;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+
+      /* button{
+        background-color: #1259c3;
+        border-radius: 10px;
+        color: white;
+        padding: 9px;
+        cursor: pointer;
+        font-size: 100%;
+      } */
+   
+
+
+
+
+@media (min-width: 992px) {
+    /* Desktop */
+
+
+    .banner{
+        width: 100vw;
+    }
+
+    .barra-busqueda{
+        width: 20%;
+    }
+
+    /* navbar */
+    nav.main-navbar{
+        font-size: 1.1rem;
+    }
+    .main-navbar li{
+        text-decoration: none;
+
+    }
+   
+    /* Hamburgesa */
+    .menu-burger{
+        display: none;
+    }
+
+    /* palabras */
+    .Descripcion-txt{
+           display: block;
+      }
+
+      .cuerpo-txt{
+        width: auto;
+        max-width: 1200px;
+        font-size: 100%;
+    }
+      
+   
+
+ 
+
+
+
+    /* logo del carrito */
+   
+   .envio-border{
+        display: none;
+        border: none;
+        padding: 0;
+   }
+
+   .product-desc-box {
+    position: relative;
+}
+
+   /* figuras */
+   .footer-box-shadow,
+   .figuras-box-shadow{
+       box-shadow: 0px 0px 10px rgb(100, 100, 100);
+       /* width: 50vw; */
+       margin: auto;
+  }
+
+   .product-desc-box > .product-delivery-icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+     /* seccion de productos */
+
+     .section-productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .section-productos-top,
+    .section-productos-boton{
+            margin-bottom: 10px;
+            width: 22%;
+            padding-bottom: 10px;
+    }
+           /* login */
+
+           form{
+            margin: 10px;
+            padding: 10px;
+        }
+     
+    form.formulario{
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding-top: 10px;
+        padding-bottom: 30px;
+}
+
+      form input{
+        margin-top: 5%;
+        margin-bottom: 13px;
+        padding: 9px;
+        border: solid white;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+
+      /* button{
+        margin-top: 20px;
+        background-color: #1259c3;
+        border-radius: 10px;
+        color: white;
+        padding: 9px;
+        cursor: pointer;
+        font-size: 25px;
+      } */
+
+      button a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        font-size: 1.3rem;
+      }
+     
+        /*footer-section  */
+
+      .footer-section{
+        display: flex;
+        padding: 2rem;
+      }
+   /* hover a los iconos */
+        footer i:hover{
+            color: #12c33e;
+        }
+
+}
