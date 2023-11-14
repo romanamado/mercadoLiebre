@@ -7,7 +7,7 @@ const pathStatic = path.resolve(__dirname,"./public")
 
 app.use(express.static(pathStatic))
 
-const port = process.env.PORT || 3300
+const port = process.env.PORT || 4050
 const mensaje = "servidor corriendo en el puerto "
 
 app.listen(port,()=>
