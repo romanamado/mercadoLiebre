@@ -83,7 +83,6 @@ body{
 }
 
 .barra-busqueda{
-    width: 50%;
     padding: 5px;
 }
 
@@ -93,6 +92,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 500px;
 }
 
 .lupa{
